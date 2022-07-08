@@ -19,13 +19,13 @@ public class FilterList {
         names.add("pankaj");
         names.add("ani");
         System.out.println(filter(numbers, 50));
-        System.out.println(FilterList(names, 40));
+        System.out.println(FilterList(names, 5));
         System.out.println(filterbycharacter(names, "a"));
         System.out.println(filterbyname(names, "a"));
         System.out.println(filterbychara(names, "p"));
     }
 
-        private static List<Integer> filter(List<Integer>nums,Integer key) {
+        private static List<Integer> filter(List<Integer> nums,Integer key) {
         List<Integer> results = new ArrayList<>();
             for (int i = 0; i <nums.size() ; i++) {
                 Integer num = nums.get(i);
@@ -50,7 +50,7 @@ public class FilterList {
          List<String>result = new ArrayList<>();
              for (String name : names) {
                  Boolean result1 = name.startsWith(key);
-                 if(true){
+                 if(result1){
                      result.add(name);
                  }
              }
