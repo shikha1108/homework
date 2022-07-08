@@ -1,3 +1,5 @@
+package org.example;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
@@ -17,7 +19,7 @@ public class FilterList {
         names.add("pankaj");
         names.add("ani");
         System.out.println(filter(numbers, 50));
-        System.out.println(FilterList(numbers, 40));
+        System.out.println(FilterList(names, 40));
         System.out.println(filterbycharacter(names, "a"));
         System.out.println(filterbyname(names, "a"));
         System.out.println(filterbychara(names, "p"));
@@ -38,7 +40,7 @@ public class FilterList {
         private static List<String> FilterList(List<String> names, Integer key){
           List<String> result = new ArrayList<>();
           for (String name : names) {
-                if(name.length() .) {
+                if(name.length() >=key) {
                     result.add(name);
                 }
                 }
