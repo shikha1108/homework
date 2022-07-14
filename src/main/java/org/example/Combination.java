@@ -15,7 +15,7 @@ public class Combination {
     }
     private static void combination(List<String> strs){
         for (int i = 0; i < strs.size() ; i = i + 1) {
-            for (int j = j + 1; j < strs.size() ; j++) {
+            for (int j =  i+ 1; j < strs.size() ; j++) {
                 System.out.print(strs.get(i) + " ");
                 System.out.println(strs.get(j));
 
