@@ -14,6 +14,7 @@ public class Permutation {
         letters.add("F");
         letters.add("G");
         letters.add("H");
+        permutation(letters);
     }
     private static void premutation1(List<String> strs) {
         for (int i = 0; i <strs.size() ; i++) {
