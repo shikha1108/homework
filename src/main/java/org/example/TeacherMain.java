@@ -40,9 +40,8 @@ public class TeacherMain {
         for (Teacher teacher : teachers) {
             System.out.println("Name : " + teacher.name);
             System.out.println("Nmae :" + teacher.salary);
-
         }
-
+        System.out.println(highestSalary(teachers).salary);
 
 
     }
@@ -66,5 +65,16 @@ public class TeacherMain {
         }
         return newteachers;
     }
+
+    private static Teacher highestSalary(List<Teacher> teachers) {
+        Teacher salary = teachers.get(0);
+        for (Teacher teacher : teachers) {
+            if (teacher.salary > salary.salary) {
+                salary =teacher;
+            }
+        }
+        return salary;
+    }
+
 
 }
