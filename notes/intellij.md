@@ -31,3 +31,16 @@ Search everywhere (Joker)
 ```aidl
 shift 2 times
 ```
+Move back 
+```aidl
+cmd + { 
+```
+Move forward
+```aidl
+cmd + }
+```
+Go to method definition
+```aidl
+cmd + b or cmd + click
+
+```
